@@ -1,0 +1,265 @@
+body {
+  font-family: Poppins, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+}
+
+.header {
+  background-color: #f0f0f0;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: 0 4px 4px 0 #00000040;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 45px;
+  top: 0;
+  z-index: 999;
+}
+
+.header-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 300px;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+}
+
+.nav-link {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #3683f0;
+  padding: 6px 8px;
+  border-radius: 50%;
+}
+
+.nav-link:hover {
+  color: #ff5722;
+}
+
+.sidebar {
+  height: 85%;
+  width: 60px;
+  overflow: hidden;
+  position: fixed;
+  top: 76px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 4px 0 #00000040;
+  transition: 0.5s;
+  border-radius: 0px 20px 20px 0px;
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+}
+
+.sidebar .toggle-btn {
+  position: absolute;
+  left: 90%;
+  transform: translateX(-100%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidebar .toggle-btn i {
+  font-size: 14px;
+  padding: 6px 2px;
+}
+
+.sidebar.open {
+  width: 392px;
+}
+
+.sidebar.open .toggle-btn {
+  left: 386px;
+}
+
+.barname {
+  display: none;
+  font-size: 16px;
+}
+
+.sidebar.open .barname {
+  display: inline;
+}
+
+.sidebar-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  color: white;
+  padding-left: 18px;
+  height: 50px;
+  border-radius: 0 20px 0 0;
+}
+
+.sidebar-main {
+  border-radius: 0px 0px 20px 20px;
+}
+
+.main {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  max-width: 1080px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.main-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px;
+}
+.main-heading h2 {
+  color: #0029ff;
+  font-size: 28px;
+  font-weight: 700;
+}
+.main-heading button {
+  padding: 9px 24px;
+  font-size: 12px;
+  border-radius: 8px;
+  background-color: #0029ff;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+.main-desc {
+  padding: 6px 18px;
+  border-radius: 6px;
+  background-color: #d2d4d7;
+  margin-bottom: 54px;
+}
+.main-desc h3 {
+  font-size: 20px;
+}
+.main-desc p {
+  padding: 0px 8px;
+}
+.grid-item {
+  background-color: white;
+  color: white;
+  border-radius: 13px;
+  height: 580px;
+
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+.asset-heading {
+  text-align: center;
+}
+.asset-description {
+  background-color: white;
+}
+.grid-item-top {
+  background-color: black;
+  color: white;
+  border-radius: 13px 13px 0 0;
+  padding: 16px;
+}
+
+.grid-item-bottom {
+  background-color: white;
+  color: black;
+  border-radius: 0 0 13px 13px;
+
+  border-top: none;
+  font-size: 16px;
+}
+.grid-item-bottom p {
+  padding: 10px;
+}
+.asset-video {
+  margin-top: 10px;
+  padding: 0 0;
+}
+.footer {
+  height: 50vh;
+}
+
+.pointer {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.sidebar-content {
+  display: none;
+  line-height: 1.6;
+  list-style: inside;
+}
+.sidebar-content li {
+  list-style: inside;
+}
+
+.sidebar.open .sidebar-content {
+  display: block;
+}
+
+.fixed-buttons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fixed-button {
+  background-color: #0029ff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 #00000040;
+}
+
+.fixed-button i {
+  font-size: 16px;
+}
+
+.fixed-button:hover {
+  background-color: #ff5722;
+}

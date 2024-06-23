@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Development Assignment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-box">
+      <div class="logo-nav-container">
+        <a href="#" class="logo-link">
+          <img src="logo.svg" class="logo" alt="Logo" />
+        </a>
+        <nav class="nav">
+          <a href="#" class="nav-link"><i class="fas fa-home"></i></a>
+          <a href="#" class="nav-link"><i class="fas fa-binoculars"></i></a>
+          <a href="#" class="nav-link"><i class="fas fa-tools"></i></a>
+          <a href="#" class="nav-link"><i class="fas fa-bell"></i></a>
+          <a href="#" class="nav-link"><i class="fas fa-user"></i></a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <div id="sidebar" class="sidebar">
+    <div class="sidebar-btn">
+      <p id="barname" class="barname">Journey Board</p>
+      <button class="toggle-btn" onclick="toggleSidebar()"><i class="fas fa-arrow-right"></i></button>
+    </div>
+    <div id="sidebar-main" class="sidebar-main"></div>
+  </div>
+
+  <main class="main">
+    <div class="main-heading">
+      <h2>Technical Project Management</h2>
+      <button>Submit Task</button>
+    </div>
+    <div class="main-desc">
+      <h3>Explore the world of management</h3>
+      <p>As a project manager, you play an important role in leading a project through initiation, planning, execution,
+        monitoring, controlling and completion. How? Do you want to manage each and every step of your life?</p>
+    </div>
+    <div class="grid-container" id="grid-container"></div>
+  </main>
+  <section>
+    <div class="fixed-buttons">
+      <button class="fixed-button">
+        <i class="fas fa-question"></i>
+      </button>
+      <button class="fixed-button">
+        <i class="fas fa-calendar-alt"></i>
+      </button>
+      <button class="fixed-button">
+        <i class="fas fa-users"></i>
+      </button>
+    </div>
+
+  </section>
+  <footer class="footer"></footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
